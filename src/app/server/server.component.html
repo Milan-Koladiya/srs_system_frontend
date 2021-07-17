@@ -1,1 +1,8 @@
-<h1>{{ componentTitle }}</h1>
+<div class="container">
+    <br>
+    <!-- String interpolation -->
+    <h1>{{ componentTitle }}</h1> 
+    <!-- Property binding -->
+    <button class="btn btn-primary" [disabled]="propertyBindingButton">PropertyBinding</button>
+    <p [innerText]="propertyBindingButton">Disable = {{ propertyBindingButton }}</p>
+</div>
