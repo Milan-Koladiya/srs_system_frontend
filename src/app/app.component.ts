@@ -10,7 +10,7 @@ export class AppComponent {
   constructor() {
   }
 
-  serverCreate(serverDetail: { name: string, description: string }) {
+  serverCreate(serverDetail: { name: any, description: any }) {
     this.serverList.push({
       name : serverDetail.name, description : serverDetail.description
     })
