@@ -4,24 +4,18 @@ import { FormsModule }  from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { RecipesComponent } from './recipes/recipes.component';
-import { RecipesDetailComponent } from './recipes/recipe-detail/recipes-detail.component';
-import { RecipesListComponent } from './recipes/recipe-list/recipes-list.component';
-import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { ServerCreateComponent } from './server-create/server-create.component';
+import { ServerListComponent } from './server-list/server-list.component';
+import { basicDirective } from './custom-directive/basic-directives.directive';
+import { betterDirective } from './custom-directive/better-directives.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    RecipesComponent,
-    RecipesDetailComponent,
-    RecipesListComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent
+    ServerCreateComponent,
+    ServerListComponent,
+    basicDirective,
+    betterDirective
   ],
   imports: [
     BrowserModule,
